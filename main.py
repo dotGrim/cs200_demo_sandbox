@@ -1,17 +1,17 @@
-def func1():
+def getList():
     lst = []
     print('Enter numbers one at a time. Enter 0 to stop.')
-    x = int(input('num:'))
+    x = int(input('num: '))
     while x != 0:
         lst.append(x)
-        x = int(input('num:'))
+        x = int(input('num: '))
     return lst
 
-def func2(data):
+def getChoice(data):
 
     choice = ''
     while True:
-        choice = input('Select an option. 1-sum  2-min  3-max  4-quit')
+        choice = input('Select an option. 1-sum  2-min  3-max  4-quit  ')
         choiceOption(data, choice)
 
 def choiceOption(data, choice):
@@ -26,9 +26,9 @@ def choiceOption(data, choice):
         exit(0)
 
 def main():
-    data = func1()
+    data = getList()
     print(f"Original List: {data}")
-    func2(data)
+    getChoice(data)
 
 if __name__ == "__main__":
     main()
