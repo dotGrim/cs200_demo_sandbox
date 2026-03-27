@@ -8,8 +8,6 @@ def func1():
     return lst
 
 def func2(data):
-    print('Here is the data:')
-    print(data)
 
     choice = ''
     while True:
@@ -22,14 +20,14 @@ def choiceOption(data, choice):
     elif choice == '2':
         print(f"The min is {min(data)}")
     elif choice == '3':
-        print(f"Not supported yet")
+        print(f"The max is {max(data)}")
     elif choice == '4':
         print('Goodbye')
         exit(0)
 
 def main():
-    print("Hello, World!")
     data = func1()
+    print(f"Original List: {data}")
     func2(data)
 
 if __name__ == "__main__":
