@@ -7,12 +7,14 @@ def getList():
         x = int(input('num: '))
     return lst
 
+
 def getChoice(data):
 
     choice = ''
     while True:
         choice = input('Select an option. 1-sum  2-min  3-max  4-quit  ')
         choiceOption(data, choice)
+
 
 def choiceOption(data, choice):
     if choice == '1':
@@ -25,10 +27,12 @@ def choiceOption(data, choice):
         print('Goodbye')
         exit(0)
 
+
 def main():
     data = getList()
     print(f"Original List: {data}")
     getChoice(data)
+
 
 if __name__ == "__main__":
     main()
