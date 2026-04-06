@@ -1,3 +1,21 @@
+
+
+
+
+def foo(x, y):
+    return (x*y) + 1
+
+
+def bar(a, b):
+    while b > 0:
+        b -= 1
+        a *= 2
+    return a
+
+
+
+
+
 def getList():
     lst = []
     print('Enter numbers one at a time. Enter 0 to stop.')
