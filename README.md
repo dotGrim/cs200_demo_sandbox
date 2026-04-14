@@ -6,4 +6,11 @@ This fork is used to experiment with **various GitHub features**.
 - PRs
 - Basic features
 
---- 
+---   
+
+To use the Dockerfile:
+
+```
+docker build -t sandbox .
+docker run -it --rm sandbox
+```
